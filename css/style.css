@@ -1,0 +1,123 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: url(../bg.jpg);
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+nav {
+    display: block;
+    margin: auto;
+    width: 100%;
+
+}
+
+nav h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+    text-shadow: 4px 4px gray;
+}
+
+nav h1 span {
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px grey;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+
+}
+
+.container {
+    max-width: 850px;
+    margin: auto;
+    border: 2px solid rgb(77, 76, 76);
+    height: 60%;
+    display: block;
+    background-color: rgba(240, 248, 255, 0.785);
+    border-radius: 28px;
+    overflow-y: auto;
+    padding-bottom: 10px;
+    box-shadow: 5px 5px rgba(128, 128, 128, 0.514);
+}
+
+.message {
+    background-color: rgb(124, 126, 126);
+    color: rgb(255, 255, 255);
+    /* font-weight: bold; */
+    width: 24%;
+    font-size: 13px;
+    padding: 7px;
+    margin: 17px 12px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 18px;
+}
+
+.left {
+    float: left;
+    clear: both;
+}
+
+.right {
+    float: right;
+    clear: both;
+}
+
+.send {
+    display: flex;
+    width: 850px;
+    margin: auto;
+
+}
+
+#send-container {
+    width: 850px;
+    margin: 10px 0px;
+}
+
+#messageInp {
+    width: 83%;
+    border-radius: 15px;
+    font-size: 15px;
+    padding: 5px;
+    margin-top: 8px;
+    background-color: rgba(254, 254, 254, 0.756);
+}
+
+.btn {
+    width: 11%;
+    padding: 5px;
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 12px;
+    background-color: rgba(254, 254, 254, 0.756);
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(86, 85, 85);
+    color: white;
+}
+
+@media (min-width:360px) and (max-width:870px) {
+    .container {
+        width: inherit;
+        margin: auto;
+        display: block;
+        height: 800px;
+    }
+    #messageInp{
+        width: 73%;
+    }
+}
